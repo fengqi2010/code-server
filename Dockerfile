@@ -2,7 +2,6 @@
 FROM ubuntu:20.04
 
 # 安装依赖
-RUN sed -i -E 's/ports.ubuntu.com/mirrors.tencent.com/g' /etc/apt/sources.list
 RUN apt-get update && \
     apt-get install -y curl wget openjdk-8-jdk
 
